@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebRTC</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    
+    <div class="init-controls">
+        <div>
+            <button id="create-btn">Create Room</button>
+        </div>
+        <div>
+            <input type="text" id="join-input" placeholder="Room ID">
+            <button id="join-btn">Join Room</button>
+        </div>
+    </div>
+
+    <div class="media">
+        <video id="localVideo"></video>
+        <div id="peerVideos"></div>
+    </div>
+
+    <!-- <div class="room-controls">
+        <button id="disconnect-btn">Disconnect</button>
+    </div> -->
+
+    <script src="/static/js/main.js" type="module"></script>
 </body>
 </html>
